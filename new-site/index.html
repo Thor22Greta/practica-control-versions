@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <meta name="description" content="Curs de javascript aplicat a interaccions amb elements HTML">
 
-  <meta property="og:title" content="Curs de JavaScript i HTM">
+  <meta property="og:title" content="Curs de JavaScript i HTML">
   <meta property="og:type" content="website">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -43,53 +43,52 @@
     <section id="home">
       <h2>Benvinguts al curs!!</h2>
       <p>Breu descripció del curs: En aquest curs aprendreu a manipular HTML amb JavaScript per crear interaccions
-        dinàmiques en una pàgina web.
-      </p>
+        dinàmiques en una pàgina web.</p>
     </section>
 
     <!-- Modificar contenido HTML -->
     <section id="modificar-contenido-html">
       <h2>Modificar Contenido HTML</h2>
-      <p id="demo">JavaScript pot canviar el contingut d'aquest paràgraf.</p>
-      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hola JavaScript!"'>Fes clic per canviar el contingut</button>
-
+      <p id="demo-content">JavaScript pot canviar el contingut d'aquest paràgraf.</p>
+      <button type="button" onclick='document.getElementById("demo-content").innerHTML = "Hola JavaScript!"'>Fes clic
+        per canviar el contingut</button>
       <h3>Explicació:</h3>
-      <p>
-        Aquest exemple utilitza JavaScript per canviar el contingut d'un element HTML quan es fa clic en un botó. Utilitzem la funció
-        <code>getElementById()</code> per seleccionar l'element amb l'ID "demo" i després modificar el seu contingut.
-      </p>
+      <p>Aquest exemple utilitza JavaScript per canviar el contingut d'un element HTML quan es fa clic en un botó.
+        Utilitzem la funció <code>getElementById()</code> per seleccionar l'element amb l'ID "demo-content" i després
+        modificar el seu contingut.</p>
+
+      <h3>Exemple addicional:</h3>
+      <p id="additional-content">Contingut original d'aquesta secció.</p>
+      <button type="button"
+        onclick='document.getElementById("additional-content").innerHTML = "Contingut actualitzat!"'>Actualitza el
+        contingut</button>
     </section>
 
     <!-- Modificar atributos HTML -->
     <section id="modificar-atributs-html">
       <h2>Modificar Atributos HTML</h2>
       <p>Aquest és un enllaç: <a id="myLink" href="https://www.google.com">Visita Google</a></p>
-      <button type="button" onclick='changeLink()'>
-        Canviar l'atribut i el text de l'enllaç
-      </button>
-
+      <button type="button" onclick='changeLink()'>Canviar l'atribut i el text de l'enllaç</button>
       <h3>Explicació:</h3>
-      <p>
-        En aquest exemple, utilitzem JavaScript per canviar l'atribut <code>href</code> d'un enllaç HTML i el seu text quan es fa clic en un botó. 
-        La funció <code>setAttribute()</code> permet modificar qualsevol atribut d'un element HTML, i la propietat 
-        <code>innerHTML</code> permet modificar el text visible d'un element.
-      </p>
+      <p>En aquest exemple, utilitzem JavaScript per canviar l'atribut <code>href</code> d'un enllaç HTML i el seu text
+        quan es fa clic en un botó. La funció <code>setAttribute()</code> permet modificar qualsevol atribut d'un
+        element HTML, i la propietat <code>innerHTML</code> permet modificar el text visible d'un element.</p>
+
+      <h3>Exemple addicional:</h3>
+      <p>Aquest és un altre enllaç: <a id="myImageLink" href="https://www.example.com">Visita Example</a></p>
+      <button type="button" onclick='changeImageLink()'>Canviar l'atribut href i el text d'aquest enllaç</button>
     </section>
 
     <!-- Modificar estils CSS -->
     <section id="modificar-estils-css">
       <h2>Modificar Estils CSS</h2>
       <p>Aquest és un exemple de com JavaScript pot canviar els estils d'un element HTML:</p>
-
-      <p id="demo">JavaScript pot canviar el style d'un element HTML.</p>
-      <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
-        Canvia el tamany de la font
-      </button>
-
+      <p id="demo-style">JavaScript pot canviar el style d'un element HTML.</p>
+      <button type="button" onclick="document.getElementById('demo-style').style.fontSize='35px'">Canvia el tamany de la
+        font</button>
       <h3>Explicació:</h3>
-      <p>
-        En aquest exemple, utilitzem JavaScript per canviar el tamany de la font d'un element HTML. 
-        Al fer clic al botó, el tamany de la font del paràgraf amb l'identificador <code>demo</code> canvia a <code>35px</code>.
+      <p>En aquest exemple, utilitzem JavaScript per canviar el tamany de la font d'un element HTML. Al fer clic al
+        botó, el tamany de la font del paràgraf amb l'identificador <code>demo-style</code> canvia a <code>35px</code>.
       </p>
     </section>
   </main>
@@ -106,6 +105,12 @@
       const link = document.getElementById("myLink");
       link.setAttribute("href", "https://www.youtube.com"); // Cambia el atributo href
       link.innerHTML = "Visita YouTube"; // Cambia el texto del enlace
+    }
+
+    function changeImageLink() {
+      const imageLink = document.getElementById("myImageLink");
+      imageLink.setAttribute("href", "https://www.wikipedia.org"); // Cambia el atributo href
+      imageLink.innerHTML = "Visita Wikipedia"; // Cambia el texto del enlace
     }
   </script>
 
