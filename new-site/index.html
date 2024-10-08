@@ -44,6 +44,18 @@
       <h2>Benvinguts al curs!!</h2>
       <p>Breu descripció del curs: En aquest curs aprendreu a manipular HTML amb JavaScript per crear interaccions
         dinàmiques en una pàgina web.
+    </section>
+
+    <!-- Modificar contenido HTML -->
+    <section id="modificar-contenido-html">
+      <h2>Modificar Contenido HTML</h2>
+      <p id="demo">JavaScript pot canviar el contingut d'aquest paràgraf.</p>
+      <button type="button" onclick='document.getElementById("demo").innerHTML = "Hola JavaScript!"'>Fes clic per canviar el contingut</button>
+
+      <h3>Explicació:</h3>
+      <p>
+        Aquest exemple utilitza JavaScript per canviar el contingut d'un element HTML quan es fa clic en un botó. Utilitzem la funció
+        <code>getElementById()</code> per seleccionar l'element amb l'ID "demo" i després modificar el seu contingut.
       </p>
     </section>
   </main>
