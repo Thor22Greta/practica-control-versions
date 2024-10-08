@@ -44,6 +44,22 @@
       <h2>Benvinguts al curs!!</h2>
       <p>Breu descripció del curs: En aquest curs aprendreu a manipular HTML amb JavaScript per crear interaccions
         dinàmiques en una pàgina web.
+    </section>
+
+    <!-- Modificar atributos HTML -->
+    <section id="modificar-atributs-html">
+      <h2>Modificar Atributos HTML</h2>
+      <p>Aquest és un enllaç: <a id="myLink" href="https://www.google.com">Visita Google</a></p>
+      <button type="button" onclick='changeLink()'>
+        Canviar l'atribut i el text de l'enllaç
+      </button>
+
+      <h3>Explicació:</h3>
+      <p>
+        En aquest exemple, utilitzem JavaScript per canviar el valor de l'atribut <code>href</code> d'un enllaç HTML i
+        el seu text quan es fa clic en un botó.
+        La funció <code>setAttribute()</code> permet modificar qualsevol atribut d'un element HTML, i la propietat
+        <code>innerHTML</code> permet modificar el text visible d'un element.
       </p>
     </section>
   </main>
@@ -55,6 +71,13 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <script>
+    function changeLink() {
+      const link = document.getElementById("myLink");
+      link.setAttribute("href", "https://www.youtube.com"); // Cambia el atributo href
+      link.innerHTML = "Visita YouTube"; // Cambia el texto del enlace
+    }
+  </script>
 
 </body>
 
