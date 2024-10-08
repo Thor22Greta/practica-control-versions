@@ -44,6 +44,7 @@
       <h2>Benvinguts al curs!!</h2>
       <p>Breu descripció del curs: En aquest curs aprendreu a manipular HTML amb JavaScript per crear interaccions
         dinàmiques en una pàgina web.
+      </p>
     </section>
 
     <!-- Modificar contenido HTML -->
@@ -56,7 +57,9 @@
       <p>
         Aquest exemple utilitza JavaScript per canviar el contingut d'un element HTML quan es fa clic en un botó. Utilitzem la funció
         <code>getElementById()</code> per seleccionar l'element amb l'ID "demo" i després modificar el seu contingut.
-    
+      </p>
+    </section>
+
     <!-- Modificar atributos HTML -->
     <section id="modificar-atributs-html">
       <h2>Modificar Atributos HTML</h2>
@@ -67,10 +70,26 @@
 
       <h3>Explicació:</h3>
       <p>
-        En aquest exemple, utilitzem JavaScript per canviar el valor de l'atribut <code>href</code> d'un enllaç HTML i
-        el seu text quan es fa clic en un botó.
-        La funció <code>setAttribute()</code> permet modificar qualsevol atribut d'un element HTML, i la propietat
+        En aquest exemple, utilitzem JavaScript per canviar l'atribut <code>href</code> d'un enllaç HTML i el seu text quan es fa clic en un botó. 
+        La funció <code>setAttribute()</code> permet modificar qualsevol atribut d'un element HTML, i la propietat 
         <code>innerHTML</code> permet modificar el text visible d'un element.
+      </p>
+    </section>
+
+    <!-- Modificar estils CSS -->
+    <section id="modificar-estils-css">
+      <h2>Modificar Estils CSS</h2>
+      <p>Aquest és un exemple de com JavaScript pot canviar els estils d'un element HTML:</p>
+
+      <p id="demo">JavaScript pot canviar el style d'un element HTML.</p>
+      <button type="button" onclick="document.getElementById('demo').style.fontSize='35px'">
+        Canvia el tamany de la font
+      </button>
+
+      <h3>Explicació:</h3>
+      <p>
+        En aquest exemple, utilitzem JavaScript per canviar el tamany de la font d'un element HTML. 
+        Al fer clic al botó, el tamany de la font del paràgraf amb l'identificador <code>demo</code> canvia a <code>35px</code>.
       </p>
     </section>
   </main>
